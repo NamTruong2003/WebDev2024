@@ -7,7 +7,8 @@
 
         <!-- CSS Styles -->
         <link rel='stylesheet' href="../../css/side_bar.css">
-        <title>Hello, cc!</title>
+        <script src="../../javascripts/Tab_bar_script.js"></script>
+        <title>USTH News Admin</title>
     </head>
     <body>
 
@@ -60,22 +61,5 @@
                 height="100%" width="100%" title="Iframe Example"></iframe>
 
         </section>
-        <script>
-            let expand_btns = document.querySelectorAll(".bx-chevron-down");
-            expand_btns.forEach(btn => {
-                btn.addEventListener("click", (e) => {
-                    let parentLi = e.target.closest('li');
-                    parentLi.classList.toggle("showMenu");
-                });
-            });
-
-
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".bx-menu");
-    console.log(sidebarBtn);
-    sidebarBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("close");
-        });
-</script>
     </body>
 </html>
