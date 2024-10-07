@@ -7,7 +7,8 @@
 
         <!-- CSS Styles -->
         <link rel='stylesheet' href="../../css/side_bar.css">
-        <title>Hello, cc!</title>
+        <script src="../../javascripts/Tab_bar_script.js"></script>
+        <title>USTH News Admin</title>
     </head>
     <body>
 
@@ -20,24 +21,15 @@
                 <nav>
                     <li>
                         <!-- Your Link here -->
-                        <a href="#">
+                        <a href="../Doasboard/Doasboard.html">
                             <i class='bx bxs-dashboard'></i>
-                            <span class="link_name">DashBoard</span>
+                            <span class="link_name" target="iframe_a">DashBoard</span>
                         </a>
                         <ul class="sub-links">
                             <li class="link_name">DashBoard<a href="#"></a></li>
                         </ul>
                     </li>
-                    <li>
-                        <!-- Your Link here -->
-                        <a href="#">
-                            <i class='bx bx-book-reader'></i>
-                            <span class="link_name">Books</span>
-                        </a>
-                        <ul class="sub-links">
-                            <li class="link_name">Books<a href="#"></a></li>
-                        </ul>
-                    </li>
+
 
                     <li>
                         <div class="ionc-links">
@@ -53,17 +45,8 @@
                                     href="#"></a></li>
                             <li><a href="../ManageNews/addNews.html"
                                     target="iframe_a">Add News</a></li>
-                            <li><a href="../ManageNews/view_news.html">View
+                            <li><a href="../ManageNews/view_news.html" target="iframe_a">View
                                     News</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class='bx bx-book-reader'></i>
-                            <span class="link_name">Holder</span>
-                        </a>
-                        <ul class="sub-links">
-                            <li class="link_name">Holder<a href="#"></a></li>
                         </ul>
                     </li>
                 </nav>
@@ -74,26 +57,9 @@
                 <i class='bx bx-menu'></i>
             </div>
 
-            <iframe src="../ManageNews/addNews.html" style="border:none" name="iframe_a"
+            <iframe src="../Doasboard/Doasboard.html" style="border:none" name="iframe_a"
                 height="100%" width="100%" title="Iframe Example"></iframe>
 
         </section>
-        <script>
-            let expand_btns = document.querySelectorAll(".bx-chevron-down");
-            expand_btns.forEach(btn => {
-                btn.addEventListener("click", (e) => {
-                    let parentLi = e.target.closest('li');
-                    parentLi.classList.toggle("showMenu");
-                });
-            });
-
-
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".bx-menu");
-    console.log(sidebarBtn);
-    sidebarBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("close");
-        });
-</script>
     </body>
 </html>
