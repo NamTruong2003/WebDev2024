@@ -57,7 +57,8 @@
     list-style: none;
     transition: all 0.4s ease;
 }
-.sidebar .nav-links li:hover {
+
+.sidebar .nav-links .Whole_link:hover {
     background: #1d1b31;
 }
 .sidebar .nav-links li i{
@@ -91,8 +92,7 @@ justify-content: space-between;
 .sidebar .nav-links li .sub-links{
     padding-top: 6px;
     padding-left: 40px;
-    background: #293238	;
-
+    background-color: #293238	;
 }
 
 .sidebar .nav-links li.showMenu .sub-links {
@@ -123,6 +123,7 @@ display: block;
 }
 .sidebar .nav-links li .sub-links a:hover {
     opacity: 1;
+    color: #fff;
 }
 
 .sidebar .nav-links li .sub-links .link_name {
@@ -169,6 +170,7 @@ font-size: 20px;
     visibility: hidden;
 }
 .sidebar.close .nav-links li:hover .sub-links {
+    width: max-content;
     top: 0;
     opacity: 1;
     pointer-events: auto;
