@@ -172,7 +172,7 @@ function displayNews(newsArray) {
 }
 
 // Initial display of all news
-displayNews(newsList);
+// displayNews(newsList);
 
 // edit modal box
 let editBox = document.getElementById('edit-box');
