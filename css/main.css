@@ -45,7 +45,7 @@ main a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .folder-name .see-all {
@@ -58,6 +58,17 @@ main a {
 
 .folder-name .see-all:hover{
     text-decoration: underline;
+}
+
+.right-folder-name{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.right-folder-name p{
+    font-size: 0.8em;
+    margin-right: 20px;
 }
 
 .see-all .icon {
@@ -105,3 +116,44 @@ main a {
 .thumbnail-bottom .category {
     color: red;
 }
+
+.business-category .folder-name {
+    margin-top: 20px;
+}
+
+.business-category .first-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.first-row .main-new {
+    width: 65%;
+}
+
+.first-row .main-new a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.first-row .new-left {
+    width: 32%;
+}
+
+.first-row .new-left a{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+    
+}
+
+.second-row {
+    display: grid;
+    width: 100%;
+    
+}
+
+
+
