@@ -1,0 +1,130 @@
+Index: css/dash_board_style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');\r\n\r\n*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\na {\r\n    text-decoration: none;\r\n}\r\nli {\r\n    list-style: none;\r\n}\r\n:root {\r\n    --poppins: \"Poppins\", sans-serif;\r\n    --lato: \"Lato\", sans-serif;\r\n    --light: #F9F9F9;\r\n    --blue: #3C91E6;\r\n    --light-blue: #CFE8FF;\r\n    --grey: #eee;\r\n    --dark-grey: #AAAAAA;\r\n    --dark: #342E37;\r\n    --red: #DB504A;\r\n    --light-red:#FF524C;\r\n    --yellow: #FFCE26;\r\n    --light-yellow: #FFF2C6;\r\n    --orange: #FD7238;\r\n    --light-orange: #FFE0D3;\r\n    --green: #00A65A;\r\n    --light-greeb: #00F9A7;\r\n}\r\nhtml {\r\n    overflow-x: hidden;\r\n}\r\n\r\nbody {\r\n    background: var(--grey);\r\n    overflow-x: hidden;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    margin: 0;\r\n}\r\n\r\n#content {\r\n    position: relative;\r\n    width: 100%;\r\n    transition: .3s ease;\r\n}\r\n\r\n#content main {\r\n    width: 100%;\r\n    padding: 36px 24px;\r\n    font-family: var(--poppins);\r\n    max-height: calc(100vh - 56px);\r\n    overflow-y: auto;\r\n}\r\n#content main .head-title{\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    grid-gap: 16px;\r\n    flex-wrap: wrap;\r\n}\r\n#content main .head-title .left h1 {\r\n    font-size: 36px;\r\n    font-weight: 600;\r\n    margin-bottom: 10px;\r\n    color: var(--dark);\r\n}\r\n#content main .head-title .left .breadcrumb {\r\n    display: flex;\r\n    align-items: center;\r\n    grid-gap: 16px;\r\n}\r\n#content main .head-title .left .breadcrumb li {\r\n    color: var(--dark);\r\n}\r\n#content main .head-title  .left .breadcrumb li a{\r\n    color: var(--dark-grey);\r\n    pointer-events: none;\r\n}\r\n#content main .head-title .left .breadcrumb li a.active {\r\n    color: var(--blue);\r\n    pointer-events: none;\r\n}\r\n#content main .head-title .btn-download {\r\n    height: 36px;\r\n    padding: 0 16px;\r\n    border-radius: 36px;\r\n    background: var(--blue);\r\n    color: var(--light);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    grid-gap: 10px;\r\n    font-weight: 500;\r\n}\r\n\r\n#content main .box-info {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\r\n    grid-gap: 24px;\r\n    margin-top: 36px;\r\n}\r\n#content main .box-info li {\r\n    padding: 24px;\r\n    background: var(--light);\r\n    border-radius: 20px;\r\n    display: flex;\r\n    align-items: center;\r\n    grid-gap: 24px;\r\n}\r\n\r\n#content main .box-info li .bx {\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 10px;\r\n    font-size: 36px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n#content main .box-info li:nth-child(1) .bx {\r\n    background: var(--light-blue);\r\n    color: var(--blue);\r\n}\r\n#content main .box-info li:nth-child(1) .bx:hover {\r\n   transform: scale(1.5);\r\n}\r\n#content main .box-info li:nth-child(2) .bx {\r\n    background: var(--light-yellow);\r\n    color: var(--yellow);\r\n}\r\n#content main .box-info li:nth-child(2) .bx:hover {\r\n    transform: scale(1.5);\r\n}\r\n#content main .box-info li:nth-child(3) .bx{\r\n    background: var(--green);\r\n    color: var(--light-greeb);\r\n}\r\n#content main .box-info li:nth-child(3) .bx:hover {\r\n    transform: scale(1.5);\r\n}\r\n#content main .box-info li:nth-child(4) .bx{\r\n    background: var(--light-orange);\r\n    color: var(--orange);\r\n}\r\n#content main .box-info li:nth-child(4) .bx:hover {\r\n    transform: scale(1.5);\r\n}\r\n#content main .box-info li .text h3 {\r\n    font-size: 24px;\r\n    font-weight: 600;\r\n    color: var(--dark);\r\n}\r\n#content main .box-info li .text p {\r\n    color: var(--dark);\r\n}\r\n\r\n\r\n#content main .table-data{\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    grid-gap: 24px;\r\n    margin-top: 24px;\r\n    width: 100%;\r\n    color: var(--dark);\r\n}\r\n#content main .table-data > div {\r\n    border-radius: 20px;\r\n    background: var(--light);\r\n    padding: 24px;\r\n    overflow-x: auto;\r\n}\r\n\r\n#content main .table-data .head {\r\n    display: flex;\r\n    align-items: center;\r\n    grid-gap: 16px;\r\n    margin-bottom: 24px;\r\n}\r\n#content main .table-data .head h3 {\r\n    margin-right: auto;\r\n    font-size: 24px;\r\n    font-weight: 600;\r\n}\r\n#content main .table-data .head .bx {\r\n    cursor: pointer;\r\n}\r\n\r\n\r\n#content main .table-data .library {\r\n    flex-grow: 1;\r\n    flex-basis: 300px;\r\n}\r\n#content main .table-data .library .library-list {\r\n    width: 100%;\r\n}\r\n#content main .table-data .library .library-list li {\r\n    width: 100%;\r\n    margin-bottom: 16px;\r\n    background: var(--grey);\r\n    border-radius: 10px;\r\n    padding: 14px 20px;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n#content main .table-data .library .library-list li .bx{\r\n    cursor: pointer;\r\n}\r\n#content main .table-data .library .library-list li.VietNam {\r\n   background: var(--blue);\r\n}\r\n#content main .table-data .library .library-list li.Science {\r\n  background: var(--yellow);\r\n}\r\n#content main .table-data .library .library-list li.Weather {\r\n    background: var(--orange);\r\n}\r\n#content main .table-data .library .library-list li.HotNews {\r\n   background: var(--red);\r\n}\r\n\r\n#content main .table-data .library .library-list li.VietNam:hover{\r\n    background-color: var(--light-blue);\r\n}\r\n#content main .table-data .library .library-list li.Science:hover{\r\n    background-color: var(--light-yellow);\r\n}\r\n#content main .table-data .library .library-list li.Weather:hover{\r\n    background-color: var(--light-orange);\r\n}\r\n#content main .table-data .library .library-list li.HotNews:hover{\r\n    background-color: var(--light-red);\r\n}\r\n#content main .table-data .library .library-list li:last-child {\r\n    margin-bottom: 0;\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n    #sidebar {\r\n        width: 200px;\r\n    }\r\n\r\n    #content {\r\n        width: calc(100% - 60px);\r\n        left: 200px;\r\n    }\r\n\r\n    #content nav .nav-link {\r\n        display: none;\r\n    }\r\n}\r\n@media screen and (max-width: 576px) {\r\n    #content nav form .form-input input {\r\n        display: none;\r\n    }\r\n\r\n    #content nav form .form-input button {\r\n        width: auto;\r\n        height: auto;\r\n        background: transparent;\r\n        border-radius: none;\r\n        color: var(--dark);\r\n    }\r\n\r\n    #content nav form.show .form-input input {\r\n        display: block;\r\n        width: 100%;\r\n    }\r\n    #content nav form.show .form-input button {\r\n        width: 36px;\r\n        height: 100%;\r\n        border-radius: 0 36px 36px 0;\r\n        color: var(--light);\r\n        background: var(--red);\r\n    }\r\n\r\n    #content nav form.show ~ .notification,\r\n    #content nav form.show ~ .profile {\r\n        display: none;\r\n    }\r\n\r\n    #content main .box-info {\r\n        grid-template-columns: 1fr;\r\n    }\r\n\r\n    #content main .table-data .head {\r\n        min-width: 420px;\r\n    }\r\n    #content main .table-data .order table {\r\n        min-width: 420px;\r\n    }\r\n    #content main .table-data .library .library-list {\r\n        min-width: 420px;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/dash_board_style.css b/css/dash_board_style.css
+--- a/css/dash_board_style.css	(revision 3b3bea7650e8e52afbcf0e2770302114e3c063b5)
++++ b/css/dash_board_style.css	(date 1729143261129)
+@@ -84,18 +84,6 @@
+     color: var(--blue);
+     pointer-events: none;
+ }
+-#content main .head-title .btn-download {
+-    height: 36px;
+-    padding: 0 16px;
+-    border-radius: 36px;
+-    background: var(--blue);
+-    color: var(--light);
+-    display: flex;
+-    justify-content: center;
+-    align-items: center;
+-    grid-gap: 10px;
+-    font-weight: 500;
+-}
+ 
+ #content main .box-info {
+     display: grid;
+@@ -202,15 +190,13 @@
+     width: 100%;
+     margin-bottom: 16px;
+     background: var(--grey);
+-    border-radius: 10px;
++    border-radius: 50px;
+     padding: 14px 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+-#content main .table-data .library .library-list li .bx{
+-    cursor: pointer;
+-}
++
+ #content main .table-data .library .library-list li.VietNam {
+    background: var(--blue);
+ }
+@@ -240,61 +226,4 @@
+     margin-bottom: 0;
+ }
+ 
+-@media screen and (max-width: 768px) {
+-    #sidebar {
+-        width: 200px;
+-    }
+-
+-    #content {
+-        width: calc(100% - 60px);
+-        left: 200px;
+-    }
+-
+-    #content nav .nav-link {
+-        display: none;
+-    }
+-}
+-@media screen and (max-width: 576px) {
+-    #content nav form .form-input input {
+-        display: none;
+-    }
+-
+-    #content nav form .form-input button {
+-        width: auto;
+-        height: auto;
+-        background: transparent;
+-        border-radius: none;
+-        color: var(--dark);
+-    }
+-
+-    #content nav form.show .form-input input {
+-        display: block;
+-        width: 100%;
+-    }
+-    #content nav form.show .form-input button {
+-        width: 36px;
+-        height: 100%;
+-        border-radius: 0 36px 36px 0;
+-        color: var(--light);
+-        background: var(--red);
+-    }
+ 
+-    #content nav form.show ~ .notification,
+-    #content nav form.show ~ .profile {
+-        display: none;
+-    }
+-
+-    #content main .box-info {
+-        grid-template-columns: 1fr;
+-    }
+-
+-    #content main .table-data .head {
+-        min-width: 420px;
+-    }
+-    #content main .table-data .order table {
+-        min-width: 420px;
+-    }
+-    #content main .table-data .library .library-list {
+-        min-width: 420px;
+-    }
+-}
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\nUSTH ICT 2024 Web Application Development\r\n=====================================================\r\n\r\nStudents are expected to:\r\n\r\n* Fork this repository to your github account\r\n* Update student name and ID to this README file\r\n* Push your commits regularly, with proper commit messages\r\n\r\nStudent Info\r\n=======================\r\n\r\n\r\n* Name: Trương Quang Nam\r\n* ID: BA12-134\r\n* Group ID: 6\r\n* Project Name: Content Management System (CMS)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision 3b3bea7650e8e52afbcf0e2770302114e3c063b5)
++++ b/README.md	(date 1729143673993)
+@@ -13,7 +13,7 @@
+ =======================
+ 
+ 
+-* Name: Trương Quang Nam
+-* ID: BA12-134
++* Name: Vũ Thành Long
++* ID: BA12-110
+ * Group ID: 6
+ * Project Name: Content Management System (CMS)
+\ No newline at end of file
