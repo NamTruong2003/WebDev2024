@@ -11,7 +11,7 @@
 // list of news object
 const news1 = {
     id: 1,
-    coverImage: '/assets/news_img/market_hit.jpg',
+    coverImage: '../../assets/news_img/market_hit.jpg',
     newsTitle: 'Breaking News: Market Hits Record High',
     newsDescription: 'The stock market reached an all-time high today with major indices showing significant gains.',
     categories: ['Finance', 'Economy'],
@@ -21,7 +21,7 @@ const news1 = {
 
 const news2 = {
     id: 2,
-    coverImage: '/assets/news_img/tech_innovation.jpg',
+    coverImage: '../../assets/news_img/tech_innovation.jpg',
     newsTitle: 'New Tech Innovations Announced at Conference',
     newsDescription: 'Several new technology products were unveiled at the annual tech conference today.',
     categories: ['Technology', 'Innovation'],
@@ -31,7 +31,7 @@ const news2 = {
 
 const news3 = {
     id: 3,
-    coverImage: '/assets/news_img/support_win.jpg',
+    coverImage: '../../assets/news_img/support_win.jpg',
     newsTitle: 'Local Sports Team Wins Championship',
     newsDescription: 'The local sports team clinched the championship in a thrilling final match.',
     categories: ['Sports', 'Local News'],
@@ -41,7 +41,7 @@ const news3 = {
 
 const news4 = {
     id: 4,
-    coverImage: '/assets/news_img/tect_industry.jpg',
+    coverImage: '../../assets/news_img/tect_industry.jpg',
     newsTitle: 'New Tech Innovation Revolutionizes Industry',
     newsDescription: 'A groundbreaking innovation in technology is set to revolutionize the industry.',
     categories: ['Technology', 'Business'],
@@ -51,7 +51,7 @@ const news4 = {
 
 const news5 = {
     id: 5,
-    coverImage: '/assets/news_img/city_council.jpg',
+    coverImage: '../../assets/news_img/city_council.jpg',
     newsTitle: 'City Council Approves New Park Development',
     newsDescription: 'The city council has approved the development of a new park in the downtown area.',
     categories: ['Local News', 'Community'],
@@ -61,7 +61,7 @@ const news5 = {
 
 const news6 = {
     id: 6,
-    coverImage: '/assets/news_img/health_official.jpg',
+    coverImage: '../../assets/news_img/health_official.jpg',
     newsTitle: 'Health Officials Announce Vaccination Drive',
     newsDescription: 'Health officials have announced a new vaccination drive to curb the spread of the virus.',
     categories: ['Health', 'Local News'],
@@ -71,7 +71,7 @@ const news6 = {
 
 const news7 = {
     id: 7,
-    coverImage: '/assets/news_img/robotics.jpg',
+    coverImage: '../../assets/news_img/robotics.jpg',
     newsTitle: 'Local School Wins Robotics Competition',
     newsDescription: 'A local school has won a national robotics competition, showcasing their innovation and skill.',
     categories: ['Education', 'Local News'],
@@ -81,7 +81,7 @@ const news7 = {
 
 const news8 = {
     id: 8,
-    coverImage: '/assets/news_img/restaurant_downtown.jpg',
+    coverImage: '../../assets/news_img/restaurant_downtown.jpg',
     newsTitle: 'New Restaurant Opens Downtown',
     newsDescription: 'A new restaurant featuring international cuisine has opened in the downtown area.',
     categories: ['Food', 'Local News'],
@@ -91,7 +91,7 @@ const news8 = {
 
 const news9 = {
     id: 9,
-    coverImage: '/assets/news_img/environment_group.jpg',
+    coverImage: '../../assets/news_img/environment_group.jpg',
     newsTitle: 'Environmental Group Hosts Cleanup Event',
     newsDescription: 'An environmental group is hosting a community cleanup event to promote sustainability.',
     categories: ['Environment', 'Local News'],
@@ -172,7 +172,7 @@ function displayNews(newsArray) {
 }
 
 // Initial display of all news
-displayNews(newsList);
+// displayNews(newsList);
 
 // edit modal box
 let editBox = document.getElementById('edit-box');
