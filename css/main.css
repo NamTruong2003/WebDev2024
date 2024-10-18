@@ -117,11 +117,11 @@ main a {
     color: red;
 }
 
-.business-category .folder-name {
+.folder-name {
     margin-top: 20px;
 }
 
-.business-category .first-row {
+.first-row {
     display: flex;
     flex-direction: row;
     width: 100%;
